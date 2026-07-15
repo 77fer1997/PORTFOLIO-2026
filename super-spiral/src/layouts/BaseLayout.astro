@@ -1,0 +1,17 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Header from '../components/global/Header.astro';
+import Footer from '../components/global/Footer.astro';
+import PageLoader from '../components/global/PageLoader.astro';
+import CustomCursor from '../components/global/CustomCursor.astro';
+import { site } from '../data/site';
+import '../styles/global.css';
+interface Props { title:string; description:string; image?:string; canonical?:string; pageClass?:string; schema?:Record<string,unknown> }
+const { title,description,image='/social/og.svg',canonical=new URL(Astro.url.pathname,site.url).href,pageClass='',schema:pageSchema }=Astro.props;
+const fullTitle=title===site.name?title:`${title} — ${site.name}`;
+const schema=pageSchema ?? {'@context':'https://schema.org','@type':'Person',name:site.name,url:site.url,jobTitle:site.role,email:site.email,address:{'@type':'PostalAddress',addressLocality:'Lima',addressCountry:'PE'},sameAs:Object.values(site.social)};
+---
+<!doctype html><html lang="es" id="top"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="generator" content={Astro.generator}/><title>{fullTitle}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.svg"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#0b0c0b"/>
+<meta property="og:type" content="website"/><meta property="og:title" content={fullTitle}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={new URL(image,site.url).href}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={fullTitle}/><meta name="twitter:description" content={description}/><script is:inline type="application/ld+json" set:html={JSON.stringify(schema)}/><ClientRouter />
+</head><body class={pageClass}><a class="skip" href="#main">Saltar al contenido</a><PageLoader/><Header/><main id="main"><slot /></main><Footer/><CustomCursor/><script>import '../scripts/site.ts';</script></body></html>

@@ -1,0 +1,5 @@
+---
+import { disciplines } from '../../data/disciplines';
+---
+<section class="manifesto section shell"><p class="eyebrow">Una práctica enfocada en productos digitales</p><div>{disciplines.map((item,i)=><p data-reveal><small>0{i+1}</small>{item.statement}</p>)}</div><aside data-reveal>Desarrollo soluciones.<br/>Diseño interfaces.<br/>Construyo productos útiles.</aside></section>
+<style>.manifesto>div{margin:clamp(4rem,10vw,9rem) 0}.manifesto>div p{margin:0;border-bottom:1px solid var(--line);font-size:clamp(3rem,8vw,8rem);letter-spacing:-.06em;line-height:1.15}.manifesto>div p:nth-child(2){text-align:center;color:var(--acid)}.manifesto>div p:nth-child(3){text-align:right}.manifesto small{font-size:.65rem;letter-spacing:.1em;vertical-align:top;margin-right:1rem;color:var(--muted)}.manifesto aside{max-width:24rem;margin-left:auto;font-size:1.2rem}</style>

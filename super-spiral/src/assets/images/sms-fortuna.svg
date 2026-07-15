@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="b" x1="0" x2="1"><stop stop-color="#2352e8"/><stop offset="1" stop-color="#078fca"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#b)"/>
+  <g fill="none" stroke="#fff" opacity=".12"><path d="M0 120h1600M0 240h1600M0 360h1600M0 480h1600M0 600h1600M0 720h1600M0 840h1600M180 0v1000M360 0v1000M540 0v1000M720 0v1000M900 0v1000M1080 0v1000M1260 0v1000M1440 0v1000"/></g>
+  <rect x="100" y="100" width="1400" height="800" rx="28" fill="#f8fafc"/>
+  <rect x="100" y="100" width="260" height="800" rx="28" fill="#111c33"/>
+  <rect x="140" y="150" width="58" height="58" rx="12" fill="#2b63ef"/><text x="153" y="186" fill="#fff" font-family="Arial" font-size="18" font-weight="700">SMS</text>
+  <text x="220" y="185" fill="#fff" font-family="Arial" font-size="30" font-weight="700">Fortuna</text>
+  <g fill="#9ba8bd" font-family="Arial" font-size="20"><text x="145" y="300">Dashboard</text><text x="145" y="365">Enviar SMS</text><text x="145" y="430">Campañas</text><text x="145" y="495">Historial</text><text x="145" y="560">API</text></g>
+  <text x="420" y="185" fill="#0f172a" font-family="Arial" font-size="42" font-weight="700">Dashboard</text>
+  <g><rect x="420" y="235" width="230" height="150" rx="18" fill="#fff" stroke="#dbe1ea"/><rect x="680" y="235" width="230" height="150" rx="18" fill="#fff" stroke="#dbe1ea"/><rect x="940" y="235" width="230" height="150" rx="18" fill="#fff" stroke="#dbe1ea"/><rect x="1200" y="235" width="230" height="150" rx="18" fill="#fff" stroke="#dbe1ea"/></g>
+  <g fill="#596579" font-family="Arial" font-size="17"><text x="450" y="285">Saldo SMS</text><text x="710" y="285">Valor disponible</text><text x="970" y="285">Mensajes enviados</text><text x="1230" y="285">Tasa de aceptación</text></g>
+  <g fill="#0f172a" font-family="Arial" font-size="34" font-weight="700"><text x="450" y="345">149 SMS</text><text x="710" y="345">S/ 11.92</text><text x="970" y="345">2</text><text x="1230" y="345">100%</text></g>
+  <rect x="420" y="425" width="490" height="390" rx="18" fill="#fff" stroke="#dbe1ea"/><rect x="940" y="425" width="490" height="390" rx="18" fill="#fff" stroke="#dbe1ea"/>
+  <text x="455" y="480" fill="#0f172a" font-family="Arial" font-size="23" font-weight="700">SMS por día</text><text x="975" y="480" fill="#0f172a" font-family="Arial" font-size="23" font-weight="700">Mensajes enviados</text>
+  <path d="M470 735h390M470 735V525M990 735h390M990 735V525" fill="none" stroke="#aab4c2" stroke-width="2"/><path d="M990 735h390" stroke="#11b98a" stroke-width="5"/>
+</svg>

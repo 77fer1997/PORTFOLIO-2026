@@ -1,0 +1,5 @@
+---
+import { site } from '../../data/site';
+---
+<footer class="footer shell"><div><span class="eyebrow">Fin / Volver a empezar</span><a class="footer-name" href="/">{site.name}</a></div><div class="footer-meta"><p>{new Date().getFullYear()} · {site.location}<br/>Creado con Astro. Diseñado con intención.</p><nav aria-label="Redes sociales">{Object.entries(site.social).map(([name,url]) => <a href={url} target="_blank" rel="noopener noreferrer">{name} ↗</a>)}</nav><a href="#top">Volver arriba ↑</a></div></footer>
+<style>.footer{padding-block:6rem 3rem;border-top:1px solid var(--line)}.footer-name{display:block;font-size:clamp(4rem,14vw,13rem);letter-spacing:-.08em;line-height:1;margin:2rem 0}.footer-meta{display:grid;grid-template-columns:1fr auto auto;gap:3rem;align-items:end;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}.footer-meta nav{display:flex;gap:1.5rem}@media(max-width:700px){.footer-meta{grid-template-columns:1fr}.footer-meta nav{flex-direction:column;gap:.5rem}}</style>

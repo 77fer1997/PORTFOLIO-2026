@@ -1,0 +1,6 @@
+---
+import type { CollectionEntry } from 'astro:content'; import ProjectList from '../projects/ProjectList.astro';
+interface Props { projects: CollectionEntry<'projects'>[]; } const { projects } = Astro.props;
+---
+<section id="work" class="section shell"><div class="work-head"><div><p class="eyebrow">Trabajo seleccionado / 2024—26</p><h2 class="section-title" data-reveal>Ideas hechas<br/><em>realidad.</em></h2></div><p>Proyectos donde el desarrollo de software, el diseño de interfaces y la experiencia de usuario trabajan juntos.</p></div><ProjectList projects={projects}/><a class="button all-work" href="/projects/">Todos los proyectos ↗</a></section>
+<style>.work-head{display:grid;grid-template-columns:2fr 1fr;gap:4rem;align-items:end;margin-bottom:5rem}.work-head em{font-family:serif;font-weight:400;color:var(--acid)}.work-head>p{max-width:24rem;color:var(--muted);font-size:1.15rem}.all-work{margin-top:3rem}@media(max-width:700px){.work-head{grid-template-columns:1fr;gap:1rem}}</style>

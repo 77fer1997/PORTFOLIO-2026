@@ -1,0 +1,4 @@
+---
+import { getCollection } from 'astro:content'; import BaseLayout from '../../layouts/BaseLayout.astro'; import ProjectList from '../../components/projects/ProjectList.astro'; const projects=(await getCollection('projects')).sort((a,b)=>a.data.order-b.data.order);
+---
+<BaseLayout title="Proyectos" description="Trabajo seleccionado de desarrollo de software y diseño digital."><section class="section shell index"><p class="eyebrow">Archivo / {projects.length} casos de estudio</p><h1 class="section-title">Software con<br/><em>criterio visual.</em></h1><p class="intro">Interfaces expresivas, aplicaciones web y sistemas digitales centrados en las personas.</p><ProjectList projects={projects}/></section></BaseLayout><style>.index{padding-top:calc(var(--header) + 7rem)}.index em{font-family:serif;color:var(--acid);font-weight:400}.intro{max-width:35rem;color:var(--muted);font-size:1.2rem;margin:2rem 0 6rem}</style>

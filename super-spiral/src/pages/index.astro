@@ -1,0 +1,5 @@
+---
+import { getCollection } from 'astro:content'; import BaseLayout from '../layouts/BaseLayout.astro'; import Hero from '../components/sections/Hero.astro'; import Manifesto from '../components/sections/Manifesto.astro'; import Disciplines from '../components/sections/Disciplines.astro'; import FeaturedProjects from '../components/sections/FeaturedProjects.astro'; import Experience from '../components/sections/Experience.astro'; import Skills from '../components/sections/Skills.astro'; import Principles from '../components/sections/Principles.astro'; import Contact from '../components/sections/Contact.astro'; import { site } from '../data/site';
+const projects=(await getCollection('projects',({data})=>data.featured)).sort((a,b)=>a.data.order-b.data.order); const experience=(await getCollection('experience')).sort((a,b)=>a.data.order-b.data.order);
+---
+<BaseLayout title={site.name} description={site.description}><Hero/><Manifesto/><Disciplines/><FeaturedProjects projects={projects}/><Experience items={experience}/><Skills/><Principles/><Contact/></BaseLayout>
