@@ -1,8 +1,8 @@
 ---
-date: 2022—Actualidad
-institution: Formación independiente
-role: Diseño UI · Sistemas visuales
-category: Diseño digital
+date: Ene. 2023—Ene. 2024
+institution: Tismart · Izipay
+role: Senior Frontend Developer
+category: Fintech
 order: 3
-description: Formación continua en diseño de interfaces, tipografía, prototipado, accesibilidad y sistemas de diseño.
+description: Migración a React y Next.js, arquitectura frontend y módulos de pagos.
 ---

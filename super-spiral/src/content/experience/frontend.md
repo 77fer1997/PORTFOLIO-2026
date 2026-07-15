@@ -1,8 +1,8 @@
 ---
-date: 2021—Actualidad
-institution: Proyectos independientes y colaborativos
-role: Desarrollador · Diseñador UI
-category: Práctica digital
+date: Dic. 2025—Jun. 2026
+institution: Coforge / Encora · Pacífico Seguros
+role: Senior Frontend Developer
+category: Seguros
 order: 1
-description: Desarrollo de interfaces responsive, sistemas de diseño y experiencias web expresivas con herramientas modernas.
+description: Liderazgo frontend, microfrontends y modernización de módulos críticos con React.
 ---

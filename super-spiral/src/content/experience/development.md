@@ -1,8 +1,8 @@
 ---
-date: 2021—Now
-institution: Independent & collaborative studios
-role: Creative Developer
-category: Practice
+date: Feb. 2024—Dic. 2025
+institution: Sermaluc · Banco BCI
+role: Senior Frontend Developer
+category: Banca
 order: 2
-description: Digital products, automation and expressive web experiences for human-centred teams.
+description: Arquitectura modular, liderazgo de equipo y optimización de productos bancarios.
 ---
